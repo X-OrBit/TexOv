@@ -1,0 +1,1 @@
+_Made by [@dsalakhov](https://t.me/dsalakhov) и [@azakarka](https://t.me/azakarka)_
