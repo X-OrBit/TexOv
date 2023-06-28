@@ -49,4 +49,5 @@ $$
 \newcommand{\simg}[1]{\xrightarrow[\widehat{\text{Э}}_{#1}]{}}
 \newcommand{\rev}{\underset{\Longrightarrow}{\text{УСВ}}}
 \let\ds\displaystyle
+\newcommand{\atpoint}[1]{\Big |_{#1}}
 $$
