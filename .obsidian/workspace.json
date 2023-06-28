@@ -1,55 +1,19 @@
 {
   "main": {
-    "id": "17287212fa54ce16",
+    "id": "0d06b78520b4d8b1",
     "type": "split",
     "children": [
       {
-        "id": "9b41ad2cc33faefa",
+        "id": "5d2151d2fdd8cd1a",
         "type": "tabs",
         "children": [
           {
-            "id": "5a309afacf602eaf",
+            "id": "3bd5028a49d9c256",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Calculus/Calculus-Exam4/Calculus-Exam4.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b160f0ed36601a2f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "templates/template.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7c4168de587fec1d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "templates/authors/template_authors.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "136de5f5345a1d1a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "templates/components/template_latex.md",
+                "file": "Calculus/Calculus-Test3/Calculus-Test3.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,15 +25,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "47613054151c3d3c",
+    "id": "0ecd0cc04d27d841",
     "type": "split",
     "children": [
       {
-        "id": "429a97d01f894209",
+        "id": "90b19b788e30f909",
         "type": "tabs",
         "children": [
           {
-            "id": "21610763f5c4644c",
+            "id": "a13a4b1c998cc777",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -79,7 +43,7 @@
             }
           },
           {
-            "id": "0bda05d601e5a6ea",
+            "id": "d59ccc681b6b3c52",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -94,7 +58,7 @@
             }
           },
           {
-            "id": "e7467825f04dda95",
+            "id": "06e94de43ee07173",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -105,24 +69,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 298.5
   },
   "right": {
-    "id": "c742ecc0c64d43d7",
+    "id": "d3d500751541f716",
     "type": "split",
     "children": [
       {
-        "id": "a17ecee7301ef498",
+        "id": "891d9c6ff092c4b1",
         "type": "tabs",
         "children": [
           {
-            "id": "840f096368809ff4",
+            "id": "693950015b579a78",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Calculus/Calculus-Exam4/Calculus-Exam4.md",
+                "file": "Calculus/Calculus-Test3/Calculus-Test3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,19 +97,19 @@
             }
           },
           {
-            "id": "0cb814ed9a78574f",
+            "id": "089c2fed027dc662",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Calculus/Calculus-Exam4/Calculus-Exam4.md",
+                "file": "Calculus/Calculus-Test3/Calculus-Test3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "11750f504b0ba621",
+            "id": "f119fafb704ae089",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -157,12 +120,12 @@
             }
           },
           {
-            "id": "2993544d381f09c8",
+            "id": "49e8c2b581538cc6",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Calculus/Calculus-Exam4/Calculus-Exam4.md"
+                "file": "Calculus/Calculus-Test3/Calculus-Test3.md"
               }
             }
           }
@@ -183,23 +146,40 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5a309afacf602eaf",
+  "active": "3bd5028a49d9c256",
   "lastOpenFiles": [
     "templates/template.md",
-    "templates/authors/template_authors.md",
+    "Calculus/Calculus-Test3/Calculus-Test3.md",
+    "Calculus/Calculus-Test3/images/list7+/task5-1.png",
+    "templates/components/template_latex.md",
     "Calculus/Calculus-Exam4/Calculus-Exam4.md",
     "[[Calculus-Exam4.md",
-    "templates/components/template_latex.md",
-    "Pasted image 20230628125624.png",
-    "images/Pasted image 20230628125852.png",
-    "Pasted image 20230628125836.png",
-    "images",
+    "Calculus/Calculus-Exam4/images/task3.png",
+    "Calculus/Calculus-Exam4/images",
     "Calculus-Exam4.pdf",
-    "Untitled.md",
-    "Calculus-Exam2.pdf",
     "README.md",
-    "Варианты 2020-2021.pdf",
-    "Линал экз 2020-2021.md",
-    "ekz 2.md"
+    "Calculus/Calculus-Exam4",
+    "Linal/Linal-Exam2/Linal-Exam-2020-2021.md",
+    "Linal/Linal-Exam2/ExamTasks-2020-2021.pdf",
+    "Calculus/Calculus-IW7/Calculus-IW7.md",
+    "pdfs/Calculus-IW7.pdf",
+    "Untitled.md",
+    "Linal/Linal-Exam2/ExamTasks_2020-2021 1.pdf",
+    "English/Speaking.md",
+    "Linal",
+    "Calculus",
+    "English/Essay.md",
+    "templates/components/template_channel_info.md",
+    "templates/solo/template_azakarka.md",
+    "templates/solo/template_dsalakhov.md",
+    "templates/components",
+    "templates/solo",
+    "templates/Untitled.md",
+    "templates/authors/template_authors.md",
+    "templates/authors/template_author_dsalakhov.md",
+    "templates/authors/template_author_azakarka.md",
+    "templates/templ.md",
+    "База.md",
+    "t.me/dsalakhov.md"
   ]
 }

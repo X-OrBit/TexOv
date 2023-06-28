@@ -1,4 +1,7 @@
 {
   "accentColor": "",
-  "cssTheme": "Typewriter"
+  "cssTheme": "Typewriter",
+  "enabledCssSnippets": [
+    "clean_embed"
+  ]
 }
