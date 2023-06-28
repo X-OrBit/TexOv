@@ -165,42 +165,42 @@ $$
 $$
 $$
 \displaylines{
-	\frac{\p f}{\p x} = \frac{\p f}{\p u} \cdot \frac{\p u}{\p x} + \frac{\p f}{\p v} \cdot \frac{\p v}{\p x} = 
-	f'_{u} \cdot y + f'_{v} \cdot 2x^2 \\[3mm]
+	\frac{\p f}{\p x} = \frac{\p \phi}{\p u} \cdot \frac{\p u}{\p x} + \frac{\p \phi}{\p v} \cdot \frac{\p v}{\p x} = 
+	\phi'_{u} \cdot y + \phi'_{v} \cdot 2x^2 \\[3mm]
 
-\frac{\p f}{\p y} = \frac{\p f}{\p u} \cdot \frac{\p u}{\p y} + \frac{\p f}{\p v} \cdot \frac{\p v}{\p y} = f'_{u} \cdot x + f'_{v} \cdot 2y
+\frac{\p f}{\p y} = \frac{\p \phi}{\p u} \cdot \frac{\p u}{\p y} + \frac{\p \phi}{\p v} \cdot \frac{\p v}{\p y} = \phi'_{u} \cdot x + \phi'_{v} \cdot 2y
 }
 $$
 
 Тогда
 $$
-df = \frac{\p f}{\p x} dx + \frac{\p f}{\p y} dy = (f'_u \cdot y + f'_v \cdot 2x^2)dx + (f'_{u} \cdot x + f'_v \cdot 2y) dy
+df = \frac{\p f}{\p x} dx + \frac{\p f}{\p y} dy = (\phi'_u \cdot y + \phi'_v \cdot 2x^2)dx + (\phi'_{u} \cdot x + \phi'_v \cdot 2y) dy
 $$
 
 Первый дифференциал нашли, поищем вторые:
 (так как $\phi$ дважды дифференцируема по Шварцу смешанные производные равны)
 $$
 \displaylines{
-f''_{xx} = \frac{\p}{\p x} (f'_{x}) = \frac{\p }{\p x} (f'_{u} \cdot y + f'_{v} \cdot 2x^2)
- = y \cdot (f''_{u u} \cdot \frac{\p u}{\p x} + f''_{vu} \frac{\p v}{\p x}) + \\
-+ 4x \cdot f'_{v} + 2x^2 \cdot (f''_{uv} \cdot \frac{\p u}{\p x} + f''_{vv} \cdot \frac{\p v}{\p x}) = \\
- = xy f''_{uu} + 4x f'_{v} + 4x^2y f''_{uv} + 4x^4 f''_{vv}
+f''_{xx} = \frac{\p}{\p x} (f'_{x}) = \frac{\p }{\p x} (\phi'_{u} \cdot y + \phi'_{v} \cdot 2x^2)
+ = y \cdot (\phi''_{u u} \cdot \frac{\p u}{\p x} + \phi''_{uv} \frac{\p v}{\p x}) + \\
++ 4x \cdot \phi'_{v} + 2x^2 \cdot (\phi''_{vu} \cdot \frac{\p u}{\p x} + \phi''_{vv} \cdot \frac{\p v}{\p x}) = \\
+ = xy \phi''_{uu} + 4x \phi'_{v} + 4x^2y \phi''_{uv} + 4x^4 \phi''_{vv}
 }
 $$
 
 $$
 \displaylines{
-	f''_{xy} = f''_{yx} = \frac{\p}{\p x} (f'_{y}) = \frac{\p}{\p x} (f'_{u} \cdot x + f'_{v} \cdot 2y) = \\
-	= f'_{u} + x (f''_{uu} \cdot \frac{\p u}{\p x} + f''_{vu} \cdot \frac{\p v}{\p x}) + 2y (f''_{uv} \cdot \frac{\p u}{\p x} + f''_{vv} \cdot \frac{\p v}{\p x}) = \\
-	f'_{u} + xy f''_{uu} + 3x^3 f''_{vu} + 2xy f''_{uv} + 6x^2 y f''_{vv} = \\ f'_{u} + xy f''_{uu} + x f''_{vu}(3x^2 + 2y) + 6x^2 y f''_{vv}
+	\phi''_{xy} = \phi''_{yx} = \frac{\p}{\p x} (f'_{y}) = \frac{\p}{\p x} (\phi'_{u} \cdot x + \phi'_{v} \cdot 2y) = \\
+	= \phi'_{u} + x (\phi''_{uu} \cdot \frac{\p u}{\p x} + \phi''_{vu} \cdot \frac{\p v}{\p x}) + 2y (\phi''_{uv} \cdot \frac{\p u}{\p x} + \phi''_{vv} \cdot \frac{\p v}{\p x}) = \\
+	\phi'_{u} + xy \phi''_{uu} + 3x^3 \phi''_{vu} + 2xy \phi''_{uv} + 6x^2 y \phi''_{vv} = \\ f'_{u} + xy \phi''_{uu} + x \phi''_{vu}(3x^2 + 2y) + 6x^2 y \phi''_{vv}
 }
 $$
 
 $$
 \displaylines{
-f''_{yy} = \frac{\p}{\p y} (f'_{y}) = \frac{\p}{\p y} (f'_u \cdot x + f'_v \cdot 2y) = x (f''_{uu} \cdot \frac{\p u}{\p y} + f''_{vu} \cdot \frac{\p v}{\p y}) + 2f'_{v} + 2y (f''_{uv} \cdot \frac{\p u}{\p y} + f''_{vv} \cdot \frac{\p v}{\p y}) =  \\
-x^2 f''_{uu} + 2xy f''_{vu} + 2f'_{v} + 2xy f''_{uv} + 4y^2 f''_{vv} = \\
-x^2 f''_{uu} + 4xy f''_{vu} + 4y^2f''_{vv} + 2f'_{v}
+f''_{yy} = \frac{\p}{\p y} (\f'_{y}) = \frac{\p}{\p y} (\phi'_u \cdot x + \phi'_v \cdot 2y) = x (\phi''_{uu} \cdot \frac{\p u}{\p y} + \phi''_{uv} \cdot \frac{\p v}{\p y}) + 2\phi'_{v} + 2y (\phi''_{vu} \cdot \frac{\p u}{\p y} + \phi''_{vv} \cdot \frac{\p v}{\p y}) =  \\
+x^2 \phi''_{uu} + 2xy \phi''_{uv} + 2\phi'_{v} + 2xy \phi''_{vu} + 4y^2 \phi''_{vv} = \\
+x^2 \phi''_{uu} + 4xy \phi''_{vu} + 4y^2\phi''_{vv} + 2\phi'_{v}
 }
 $$
 
@@ -222,7 +222,127 @@ $$
 
 #### Решение
 
+<<<<<<< HEAD
 > TODO
+=======
+Приведем все к стандартному виду:
+$$
+\begin{cases}
+	F_1(x, y, v, u, z) = x - v \sin u = 0 \\
+	F_2(x, y, v, u, z) = y - v \cos u = 0 \\
+	F_3(x, y, v, u, z) = z - uv^2 = 0
+\end{cases}
+$$
+Мы знаем только значения $v = 1, u = \frac{\pi}{4}$ найдем все остальные значения в точке.
+$$
+	x = \frac{\sqrt{2}}{2}, y = \frac{\sqrt{2}}{2}, z = \frac{\pi}{4}
+$$
+$$
+	P = (\frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2}, 1, \frac{\pi}{4}, \frac{\pi}{4})
+$$
+
+Выпишем матрицу, которая используется в теореме о неявном отображении:
+$$
+\begin{pmatrix}
+	\frac{\p F_1}{\p v}& \frac{\p F_2}{\p v} & \frac{\p F_3}{\p v} \\
+	\frac{\p F_1}{\p u} & \frac{\p F_2}{\p u} & \frac{\p F_3}{\p u} \\
+	\frac{\p F_1}{\p z} & \frac{\p F_3}{\p z} & \frac{\p F_3}{\p z} 
+\end{pmatrix}\atpoint{P} = 
+\begin{pmatrix}
+	-\sin u & -\cos u & - 2uv \\
+	- v \cos u & v \sin u & v^2 \\
+	0 & 0 & 1
+\end{pmatrix} \atpoint{P} = 
+\begin{pmatrix}
+	-\frac{\sqrt{2}}{2} & -\frac{\sqrt{2}}{2} & - \frac{\pi}{2} \\
+	- \frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2} & 1 \\
+	0 & 0 & 1
+\end{pmatrix}
+$$
+не тяжело увидеть что определитель не нулевой, матрица обратима.
+
+Тогда применим теорему о неявном отображении:
+$$
+\exists f_1, f_2, f_3: 
+\begin{cases}
+	v = f_1(x, y) \iff x = v \sin u\\
+	u = f_2(x, y) \iff y = v \cos u\\
+	z = f_3(x, y) \iff z = uv^2
+\end{cases}
+$$
+$$
+dz = d(uv^2) = (v^2 \cdot u'_x + 2uv \cdot v'_x)dx + (v^2 \cdot u'_y + 2uv \cdot v'_y)dy
+$$
+$$
+\begin{cases}
+	1 = \sin u \cdot v'_{x} + v \cos u \cdot u'_x\\
+	0 = \cos u \cdot v'_{x} - v \sin u \cdot u'_x
+\end{cases} \atpoint{P} = \begin{cases}
+	1 = \frac{\sqrt{2}}{2} (v'_x + u'_x) \\
+	0 = \frac{\sqrt{2}}{2} (v'_x - u'_x) 
+\end{cases} \RR
+\begin{cases}
+v'_x = \frac{\sqrt{2}}{2} \\
+u'_x = \frac{\sqrt{2}}{2}
+\end{cases}
+$$
+
+подставим в дифференциал
+$$
+\displaylines{
+dz \atpoint{P} = (u'_x + \sqrt{2} v'_x)dx + (u'_y + \sqrt{2} v'_y)dy =
+\\
+= (\frac{\sqrt{2}}{2} + 1)dx + (\frac{\sqrt{2}}{2} + 1)dy
+}
+$$
+теперь найдем $\frac{\p^2 z}{\p x \p y}$ 
+
+$$
+\displaylines{
+\frac{\p z}{\p x} (z'_{u} \cdot u'_{y} + z'_{v} \cdot v'_{y}) = \frac{\p z}{\p x} (v^2 \cdot u'_{y} + 2uv \cdot v'_y) = \\
+2v \cdot v'_{x} \cdot u'_{y} + v^2 \cdot (u''_{yx}) + 2u \cdot u'_{x} \cdot v \cdot v'_{y} + 2u v \cdot v'_{x} \cdot v'_{y} + 2uv \cdot v''_{yx} 
+}
+$$
+нужно теперь найти первые частные производные по $y$ и смешанные производные
+$$
+\begin{cases}
+0 = \sin u \cdot v'_{y} + v \cos u \cdot u'_y \\
+1 = \cos u \cdot v'_{y} - v \sin u \cdot  u'_y 
+\end{cases} \RR 
+\begin{cases}
+0 = v'_y + u'_y \\
+\sqrt{2} = v'_y - u'_y
+\end{cases} \RR \begin{cases}
+	v'_{y} = \frac{\sqrt{2}}{2} \\
+	u'_{y} = -\frac{\sqrt{2}}{2}
+\end{cases}
+$$
+$$
+\RR \begin{cases}
+0 = \cos u \cdot u'_{x} + \sin u \cdot v''_{yx} + v'_{x} \cdot \cos u \cdot u'_{y} - v \sin u \cdot u'_{x} \cdot u'_{y} + v \cos u \cdot u''_{yx} \\
+1 = -\sin u \cdot u'_{x} v'_{y} + \cos u \cdot v''_{yx} - v'_{x} \sin u \cdot u'_{y} - v \cos u \cdot u'_{x} u'_{y} - v \sin u u''_{yx}
+\end{cases} \RR
+$$
+$$
+\begin{cases}
+0 = \frac{\sqrt{2}}{2} + v''_{yx} - \frac{1}{2} + \frac{1}{2} + u''_{yx} \\
+\sqrt{2} = - \frac{1}{2} + v''_{yx} + \frac{1}{2} + \frac{1}{2} - u''_{yx}
+\end{cases} \RR \begin{cases}
+-\frac{\sqrt{2}}{2} = v''_{yx} + u''_{yx} \\
+\frac{2\sqrt{2} + 2}{2} = v''_{yx} - u''_{yx}
+\end{cases} \RR
+\begin{cases}
+v''_{yx} = \frac{\sqrt{2} + 2}{4} \\
+u''_{yx} = \frac{-3\sqrt{2} - 2}{4}
+\end{cases}
+$$
+
+вернемся к нахождению:
+$$
+\frac{\p^2 z}{\p x \p y} \atpoint{P} = \frac{1}{2} (-\sqrt{2} + \frac{-3\sqrt{2} - 2}{4} + \sqrt{2} + \frac{\pi}{2} + \frac{\sqrt{2} + 2}{4}\pi)
+$$
+
+>>>>>>> a3296af (5th task and 4 improvments)
 
 ### Задача 6
 #### Условие
