@@ -221,10 +221,6 @@ $$
 Найдите $dz$ и $\frac{\p^2 z}{\p x \p y}$ в точке $u = \frac{\pi}{4}$, $v = 1$ 
 
 #### Решение
-
-<<<<<<< HEAD
-> TODO
-=======
 Приведем все к стандартному виду:
 $$
 \begin{cases}
@@ -341,8 +337,6 @@ $$
 $$
 \frac{\p^2 z}{\p x \p y} \atpoint{P} = \frac{1}{2} (-\sqrt{2} + \frac{-3\sqrt{2} - 2}{4} + \sqrt{2} + \frac{\pi}{2} + \frac{\sqrt{2} + 2}{4}\pi)
 $$
-
->>>>>>> a3296af (5th task and 4 improvments)
 
 ### Задача 6
 #### Условие
