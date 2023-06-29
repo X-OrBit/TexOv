@@ -221,122 +221,83 @@ $$
 Найдите $dz$ и $\frac{\p^2 z}{\p x \p y}$ в точке $u = \frac{\pi}{4}$, $v = 1$ 
 
 #### Решение
-Приведем все к стандартному виду:
+
 $$
-\begin{cases}
-	F_1(x, y, v, u, z) = x - v \sin u = 0 \\
-	F_2(x, y, v, u, z) = y - v \cos u = 0 \\
-	F_3(x, y, v, u, z) = z - uv^2 = 0
-\end{cases}
-$$
-Мы знаем только значения $v = 1, u = \frac{\pi}{4}$ найдем все остальные значения в точке.
-$$
-	x = \frac{\sqrt{2}}{2}, y = \frac{\sqrt{2}}{2}, z = \frac{\pi}{4}
-$$
-$$
-	P = (\frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2}, 1, \frac{\pi}{4}, \frac{\pi}{4})
+dz = d(uv^2) = z'_{v} dv + z'_{u} du = 2vu \cdot dv + v^2 \cdot du
 $$
 
-Выпишем матрицу, которая используется в теореме о неявном отображении:
-$$
-\begin{pmatrix}
-	\frac{\p F_1}{\p v}& \frac{\p F_2}{\p v} & \frac{\p F_3}{\p v} \\
-	\frac{\p F_1}{\p u} & \frac{\p F_2}{\p u} & \frac{\p F_3}{\p u} \\
-	\frac{\p F_1}{\p z} & \frac{\p F_3}{\p z} & \frac{\p F_3}{\p z} 
-\end{pmatrix}\atpoint{P} = 
-\begin{pmatrix}
-	-\sin u & -\cos u & - 2uv \\
-	- v \cos u & v \sin u & v^2 \\
-	0 & 0 & 1
-\end{pmatrix} \atpoint{P} = 
-\begin{pmatrix}
-	-\frac{\sqrt{2}}{2} & -\frac{\sqrt{2}}{2} & - \frac{\pi}{2} \\
-	- \frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2} & 1 \\
-	0 & 0 & 1
-\end{pmatrix}
-$$
-не тяжело увидеть что определитель не нулевой, матрица обратима.
+теперь нам нужно выразить $(dv, du)$ через $(dx, dy)$, так как нас просят выразить $dz$ через $(x, y)$.
 
-Тогда применим теорему о неявном отображении:
+Мы это осуществим с помощью матрицы Якоби:
 $$
-\exists f_1, f_2, f_3: 
-\begin{cases}
-	v = f_1(x, y) \iff x = v \sin u\\
-	u = f_2(x, y) \iff y = v \cos u\\
-	z = f_3(x, y) \iff z = uv^2
-\end{cases}
+\begin{pmatrix} dx \\ dy \end{pmatrix} = \begin{pmatrix}
+	\sin u & v \cos u \\
+	\cos u & -v \sin u
+\end{pmatrix} \begin{pmatrix} dv \\ du \end{pmatrix}
 $$
+Мы нашли эти выражения с помощью первых двух равенств в системе.
+
+Найдем:
 $$
-dz = d(uv^2) = (v^2 \cdot u'_x + 2uv \cdot v'_x)dx + (v^2 \cdot u'_y + 2uv \cdot v'_y)dy
+\begin{pmatrix}
+	\sin u & v \cos u \\
+	\cos u & -v \sin u
+\end{pmatrix}^{-1} = \frac{1}{-v}\begin{pmatrix}
+	-v \sin u & - v \cos u \\
+	- \cos u & \sin u
+\end{pmatrix} (*)
 $$
+Тогда:
 $$
-\begin{cases}
-	1 = \sin u \cdot v'_{x} + v \cos u \cdot u'_x\\
-	0 = \cos u \cdot v'_{x} - v \sin u \cdot u'_x
-\end{cases} \atpoint{P} = \begin{cases}
-	1 = \frac{\sqrt{2}}{2} (v'_x + u'_x) \\
-	0 = \frac{\sqrt{2}}{2} (v'_x - u'_x) 
-\end{cases} \RR
-\begin{cases}
-v'_x = \frac{\sqrt{2}}{2} \\
-u'_x = \frac{\sqrt{2}}{2}
-\end{cases}
+\begin{pmatrix} dv \\ du \end{pmatrix} = \frac{1}{-v}\begin{pmatrix}
+	-v \sin u & - v \cos u \\
+	- \cos u & \sin u
+\end{pmatrix} \begin{pmatrix} dx \\ dy \end{pmatrix}
 $$
 
-подставим в дифференциал
+Теперь уже можно выразить $dz$ через $(x, y)$:
 $$
 \displaylines{
-dz \atpoint{P} = (u'_x + \sqrt{2} v'_x)dx + (u'_y + \sqrt{2} v'_y)dy =
-\\
-= (\frac{\sqrt{2}}{2} + 1)dx + (\frac{\sqrt{2}}{2} + 1)dy
+dz = 2vu \cdot dv + v^2 \cdot du = 2vu (\sin u \cdot dx + \cos u\cdot  dy) - v (- \cos u \cdot dx + \sin u \cdot dy) = \\
+(2vu \sin u + v \cos u)dx + (2vu \cos u - v \sin u)dy
 }
 $$
-теперь найдем $\frac{\p^2 z}{\p x \p y}$ 
+Найдем также значение в точке, для этого найдем саму точку:
+$$
+\begin{cases}
+	x = v \sin u \\
+	y = v \cos u \\
+	z = uv^2 \\
+	v = 1 \\
+	u = \frac{\pi}{4}
+\end{cases} \RR P = (\frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}}, \frac{\pi}{4}, 1, \frac{\pi}{4})
+$$
+Тогда:
+$$
+dz \atpoint{P} = (\frac{\pi}{2\sqrt{2}} + \frac{1}{\sqrt{2}})dx + (\frac{\pi}{2\sqrt{2}} - \frac{1}{\sqrt{2}})dy
+$$
 
+Второй дифференциал уже не инвариантен, поэтому найдем его стандартным способом. Для нахождением $z'_y$ воспользуемся равенством $dz = z'_x dx + z'_y dy$ 
 $$
 \displaylines{
-\frac{\p z}{\p x} (z'_{u} \cdot u'_{y} + z'_{v} \cdot v'_{y}) = \frac{\p z}{\p x} (v^2 \cdot u'_{y} + 2uv \cdot v'_y) = \\
-2v \cdot v'_{x} \cdot u'_{y} + v^2 \cdot (u''_{yx}) + 2u \cdot u'_{x} \cdot v \cdot v'_{y} + 2u v \cdot v'_{x} \cdot v'_{y} + 2uv \cdot v''_{yx} 
+\frac{\p }{\p x} (z'_{y}) = \frac{\p}{\p x} (2vu \cos u - v \sin u) = \\
+ = 2 v'_{x} u \cos u + 2v u'_{x} \cos u - 2vu \sin u \cdot u'_x - v'_x \sin u - v \cos u \cdot u'_x = \\
+ = v'_x (2 u \cos u - \sin u) + u'_x (2v \cos u - 2vu \sin u - v \cos u)
 }
 $$
-нужно теперь найти первые частные производные по $y$ и смешанные производные
+чтобы не таскать с собой громоздкие выражения, сразу подставим точку:
 $$
-\begin{cases}
-0 = \sin u \cdot v'_{y} + v \cos u \cdot u'_y \\
-1 = \cos u \cdot v'_{y} - v \sin u \cdot  u'_y 
-\end{cases} \RR 
-\begin{cases}
-0 = v'_y + u'_y \\
-\sqrt{2} = v'_y - u'_y
-\end{cases} \RR \begin{cases}
-	v'_{y} = \frac{\sqrt{2}}{2} \\
-	u'_{y} = -\frac{\sqrt{2}}{2}
-\end{cases}
+\displaylines{
+\RR \atpoint{P} = v'_x (\frac{\pi}{2\sqrt{2}} - \frac{1}{\sqrt{2}}) + u'_x (\sqrt{2} - \frac{\pi}{2\sqrt{2}} - \frac{1}{\sqrt{2}}) = \\
+
+= v'_x (\frac{\pi - 2}{2\sqrt{2}}) + u'_x (\frac{2 - \pi}{2\sqrt{2}}) = 
+}
 $$
+тут воспользуемся обратной матрицей Якоби $(*)$ 
 $$
-\RR \begin{cases}
-0 = \cos u \cdot u'_{x} + \sin u \cdot v''_{yx} + v'_{x} \cdot \cos u \cdot u'_{y} - v \sin u \cdot u'_{x} \cdot u'_{y} + v \cos u \cdot u''_{yx} \\
-1 = -\sin u \cdot u'_{x} v'_{y} + \cos u \cdot v''_{yx} - v'_{x} \sin u \cdot u'_{y} - v \cos u \cdot u'_{x} u'_{y} - v \sin u u''_{yx}
-\end{cases} \RR
-$$
-$$
-\begin{cases}
-0 = \frac{\sqrt{2}}{2} + v''_{yx} - \frac{1}{2} + \frac{1}{2} + u''_{yx} \\
-\sqrt{2} = - \frac{1}{2} + v''_{yx} + \frac{1}{2} + \frac{1}{2} - u''_{yx}
-\end{cases} \RR \begin{cases}
--\frac{\sqrt{2}}{2} = v''_{yx} + u''_{yx} \\
-\frac{2\sqrt{2} + 2}{2} = v''_{yx} - u''_{yx}
-\end{cases} \RR
-\begin{cases}
-v''_{yx} = \frac{\sqrt{2} + 2}{4} \\
-u''_{yx} = \frac{-3\sqrt{2} - 2}{4}
-\end{cases}
+= \sin u (\frac{\pi - 2}{2\sqrt{2}}) + \cos u (\frac{2 - \pi}{2\sqrt{2}}) = \frac{\pi - 2 + 2 - \pi}{4} = 0
 $$
 
-вернемся к нахождению:
-$$
-\frac{\p^2 z}{\p x \p y} \atpoint{P} = \frac{1}{2} (-\sqrt{2} + \frac{-3\sqrt{2} - 2}{4} + \sqrt{2} + \frac{\pi}{2} + \frac{\sqrt{2} + 2}{4}\pi)
-$$
 
 ### Задача 6
 #### Условие

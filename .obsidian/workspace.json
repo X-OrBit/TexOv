@@ -10,7 +10,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         "id": "fa6a59f6114f99a4",
+=======
+        "id": "6bfef841ca74099a",
+>>>>>>> Stashed changes
 =======
         "id": "6bfef841ca74099a",
 >>>>>>> Stashed changes
@@ -96,11 +100,19 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             "id": "342cccccc360b3a6",
             "type": "tabs",
             "children": [
               {
                 "id": "982ad7ce36d8a698",
+=======
+            "id": "391303bbbc171867",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "a04bfe5a8b012148",
+>>>>>>> Stashed changes
 =======
             "id": "391303bbbc171867",
             "type": "tabs",
@@ -177,6 +189,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                         "data": "amir@192 TexOv % ",
 =======
                         "data": "amir@192 TexOv % git pull \r\nremote: Enumerating objects: 29, done.\r\nremote: Counting objects: 100% (29/29), done.\r\nremote: Compressing objects: 100% (8/8), done.\r\nremote: Total 15 (delta 6), reused 15 (delta 6), pack-reused 0\r\nUnpacking objects: 100% (15/15), 59.55 KiB | 813.00 KiB/s, done.\r\nFrom https://github.com/X-OrBit/TexOv\r\n   3a7ad43..14f16bc  Calculus-Exam4 -> origin/Calculus-Exam4\r\nUpdating 3a7ad43..14f16bc\r\nerror: Your local changes to the following files would be overwritten by merge:\r\n\u001b[8C.obsidian/workspace.json\r\n\u001b[8CCalculus/Calculus-Exam4/Calculus-Exam4.md\r\nPlease commit your changes or stash them before you merge.\r\nAborting\r\namir@192 TexOv % git stash \r\nSaved working directory and index state WIP on Calculus-Exam4: 3a7ad43 ignore\r\namir@192 TexOv % git pull \r\nUpdating 3a7ad43..14f16bc\r\nerror: Your local changes to the following files would be overwritten by merge:\r\n\u001b[8C.obsidian/workspace.json\r\nPlease commit your changes or stash them before you merge.\r\nAborting\r\namir@192 TexOv % git stash ",
@@ -195,6 +208,9 @@
 >>>>>>> Stashed changes
 =======
                         "data": "amir@192 TexOv % git pull \r\nremote: Enumerating objects: 29, done.\r\nremote: Counting objects: 100% (29/29), done.\r\nremote: Compressing objects: 100% (8/8), done.\r\nremote: Total 15 (delta 6), reused 15 (delta 6), pack-reused 0\r\nUnpacking objects: 100% (15/15), 59.55 KiB | 813.00 KiB/s, done.\r\nFrom https://github.com/X-OrBit/TexOv\r\n   3a7ad43..14f16bc  Calculus-Exam4 -> origin/Calculus-Exam4\r\nUpdating 3a7ad43..14f16bc\r\nerror: Your local changes to the following files would be overwritten by merge:\r\n\u001b[8C.obsidian/workspace.json\r\n\u001b[8CCalculus/Calculus-Exam4/Calculus-Exam4.md\r\nPlease commit your changes or stash them before you merge.\r\nAborting\r\namir@192 TexOv % git stash \r\nSaved working directory and index state WIP on Calculus-Exam4: 3a7ad43 ignore\r\namir@192 TexOv % git pull \r\nUpdating 3a7ad43..14f16bc\r\nerror: Your local changes to the following files would be overwritten by merge:\r\n\u001b[8C.obsidian/workspace.json\r\nPlease commit your changes or stash them before you merge.\r\nAborting\r\namir@192 TexOv % git stash ",
+>>>>>>> Stashed changes
+=======
+                        "data": "amir@192 TexOv % git pull \r\nremote: Enumerating objects: 29, done.\r\nremote: Counting objects: 100% (29/29), done.\r\nremote: Compressing objects: 100% (8/8), done.\r\nremote: Total 15 (delta 6), reused 15 (delta 6), pack-reused 0\r\nUnpacking objects: 100% (15/15), 59.55 KiB | 813.00 KiB/s, done.\r\nFrom https://github.com/X-OrBit/TexOv\r\n   3a7ad43..14f16bc  Calculus-Exam4 -> origin/Calculus-Exam4\r\nUpdating 3a7ad43..14f16bc\r\nerror: Your local changes to the following files would be overwritten by merge:\r\n\u001b[8C.obsidian/workspace.json\r\n\u001b[8CCalculus/Calculus-Exam4/Calculus-Exam4.md\r\nPlease commit your changes or stash them before you merge.\r\nAborting\r\namir@192 TexOv % git stath \u001b[1D",
 >>>>>>> Stashed changes
                         "rows": 20
                       }
@@ -336,7 +352,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "active": "982ad7ce36d8a698",
+=======
+  "active": "a04bfe5a8b012148",
+>>>>>>> Stashed changes
 =======
   "active": "a04bfe5a8b012148",
 >>>>>>> Stashed changes
