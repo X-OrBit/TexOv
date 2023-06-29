@@ -413,14 +413,13 @@ $$
 \begin{cases}
 	L'_{x} = \sqrt{3} + 2x \lambda = 0 \\[3mm]
 	L'_{y} = 3 + 2y \lambda = 0 \\[3mm]
-	L'_{z} = 2 - 2z\lambda = 0 \\[3mm]
+	L'_{z} = 2 + 2z\lambda = 0 \\[3mm]
 	L'_{\lambda} = x^2 + y^2 + z^2 - 1 = 0
 \end{cases}
 $$
 Решим систему и получим:
-
-$P_1 = (-\frac{\sqrt{3}}{2}, \frac{-3}{2}, 1)$ с $\lambda = 1$
-$P_2 = (\frac{\sqrt{3}}{2}, \frac{3}{2}, -1)$ с $\lambda = -1$ 
+$P_1 = (-\frac{\sqrt{3}}{4}, -\frac{3}{4}, -\frac{1}{2})$ с $\lambda = 2$
+$P_2 = (\frac{\sqrt{3}}{4}, \frac{3}{4}, 1)$ с $\lambda = -2$ 
 
 Как и в предущей задачи мы решим задачу критерием Сильвестра, составим матрицу:
 $$
@@ -434,17 +433,17 @@ $$
 	0 & 0 & 2 \lambda
 \end{pmatrix}
 $$
-видно, что невырожденная матрица либо положительно либо отрицательно определенная при любых условиях, поэтому даже не смотря на значение $dF$, можно сразу выписать ответ:
+видно, что невырожденная матрица либо положительно либо отрицательно определенная при любых условиях, поэтому даже не смотря на значение $d\phi$, можно сразу выписать ответ:
 
 $P_1$ - точка локального условного минимума
 $P_2$ - точка локального условного максимума
 
 ##### Пункт б
 $$
-	F = z^2 - 6z + 5 - xy
+	\phi(x, y, z) = z^2 - 6z + 5 - xy
 $$
 $$
-L = f + \lambda F
+L = f + \lambda \phi
 $$
 $$
 \begin{cases}
@@ -455,8 +454,8 @@ L'_{\lambda} = z^2 - 6z + 5 - xy = 0
 \end{cases}
 $$
 Решаем, получаем:
-$P_1 = (0, 0, 5), \lambda = \frac{1}{5}$
-$P_2 = (0, 0, 1), \lambda = 5$
+$P_1 = (0, 0, 1), \lambda = \frac{1}{2}$
+$P_2 = (0, 0, 5), \lambda = -\frac{5}{2}$
 
 составим матрицу:
 
@@ -464,30 +463,46 @@ $P_2 = (0, 0, 1), \lambda = 5$
 $$
 \begin{cases}
 	d^2 L = 2 dx^2 - 2\lambda dx dy + 2 dy^2 + (2 + 2\lambda)dz^2 \\
-	d F = -y dx - x dy + (2z - 6)dz = 0
+	d \phi = -y dx - x dy + (2z - 6)dz = 0
 \end{cases}
 $$
 
-Подставим точки:
+**Подставим точки:**
+
 $$
-P_1=(0, 0, 5) : \begin{cases}
+P_1 = (0, 0, 1) : \begin{cases}
 	d^2 L = 2 dx^2 - 2\lambda dx dy + 2 dy^2 + (2 + 2\lambda)dz^2 \\
-	d F = (10 - 6)dz = 0
+	d \phi = (2 - 6)dz = 0 \RR dz = 0
 \end{cases} \RR 
-	 dx^2 - 2\lambda dx dy + 2 dy^2
+	 d^2 L = 2dx^2 - 2\lambda dx dy + 2 dy^2
 $$
 выпишем матрицу:
 $$
 \begin{pmatrix}
-1 & -\lambda \\
+2 & -\lambda \\
 -\lambda & 2
 \end{pmatrix} \RR \begin{cases}
-\sigma_1 = 1 \\
-\sigma_2 = 2 - \lambda^2 = 2 - \frac{1}{25} > 0
+\sigma_1 = 2 \\
+\sigma_2 = 4 - \lambda^2 = 4 - \frac{1}{4} > 0
 \end{cases} \RR \min
 $$
 
-для точки $P_2$ будет тоже самое, кроме $\lambda$, получится уже неопределенная матрица
-
+$$
+P_2=(0, 0, 5) : \begin{cases}
+	d^2 L = 2 dx^2 - 2\lambda dx dy + 2 dy^2 + (2 + 2\lambda)dz^2 \\
+	d \phi = (10 - 6)dz = 0 \RR dz = 0
+\end{cases} \RR 
+	 d^2 L = 2dx^2 - 2\lambda dx dy + 2 dy^2
+$$
+выпишем матрицу:
+$$
+\begin{pmatrix}
+2 & -\lambda \\
+-\lambda & 2
+\end{pmatrix} \RR \begin{cases}
+\sigma_1 = 2 \\
+\sigma_2 = 4 - \lambda^2 = 4 - \frac{25}{4} < 0
+\end{cases} \RR \max
+$$
 **Ответ:**
-$P_1$ - точка локального условного минимума
+$P_1$ - локальный условный минимум, $P_2$ - локальный условный максимум
