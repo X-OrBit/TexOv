@@ -1,5 +1,5 @@
-![[template_draft]]
 ![[template]]
+![[template_problems_azakarka_]]
 # Материал к экзамену в 4 модуле. Матанализ
 
 ## Разбор Листка 13+
@@ -120,6 +120,7 @@ F'_{y}(1;1;2e) = e + e + e = 3e \\[3mm]
 F'_{z}(1;1;2e) = -1
 \end{cases}
 $$
+%%PDF break%% <div style="page-break-after: always;"></div>
 **Ответ:**
 $$
 3e(x - 1) + 3e(y - 1) - (z - 2e) = 0 \RR 3ex + 3ey - z = 4e
@@ -182,8 +183,8 @@ $$
 $$
 \displaylines{
 f''_{xx} = \frac{\p}{\p x} (f'_{x}) = \frac{\p }{\p x} (\phi'_{u} \cdot y + \phi'_{v} \cdot 3x^2)
- = y \cdot (\phi''_{u u} \cdot \frac{\p u}{\p x} + \phi''_{uv} \frac{\p v}{\p x}) + \\
-+ 6x \cdot \phi'_{v} + 3x^2 \cdot (\phi''_{vu} \cdot \frac{\p u}{\p x} + \phi''_{vv} \cdot \frac{\p v}{\p x}) = \\
+ = y \cdot \l(\phi''_{u u} \cdot \frac{\p u}{\p x} + \phi''_{uv} \frac{\p v}{\p x}\r) + \\
++ 6x \cdot \phi'_{v} + 3x^2 \cdot \l(\phi''_{vu} \cdot \frac{\p u}{\p x} + \phi''_{vv} \cdot \frac{\p v}{\p x}\r) = \\
  = y^2 \phi''_{uu} + 6x \phi'_{v} + 6x^2y \phi''_{uv} + 9x^4 \phi''_{vv}
 }
 $$
@@ -191,14 +192,14 @@ $$
 $$
 \displaylines{
 	f''_{xy} = f''_{yx} = \frac{\p}{\p x} (f'_{y}) = \frac{\p}{\p x} (\phi'_{u} \cdot x + \phi'_{v} \cdot 2y) = \\
-	= \phi'_{u} + x (\phi''_{uu} \cdot \frac{\p u}{\p x} + \phi''_{vu} \cdot \frac{\p v}{\p x}) + 2y (\phi''_{uv} \cdot \frac{\p u}{\p x} + \phi''_{vv} \cdot \frac{\p v}{\p x}) = \\
+	= \phi'_{u} + x \l(\phi''_{uu} \cdot \frac{\p u}{\p x} + \phi''_{vu} \cdot \frac{\p v}{\p x}\r) + 2y \l(\phi''_{uv} \cdot \frac{\p u}{\p x} + \phi''_{vv} \cdot \frac{\p v}{\p x}\r) = \\
 	\phi'_{u} + xy \phi''_{uu} + 3x^3 \phi''_{vu} + 2y^2 \phi''_{uv} + 6x^2 y \phi''_{vv} = \\\phi'_{u} + xy \phi''_{uu} + \phi''_{vu}(3x^3 + 2y^2) + 6x^2 y \phi''_{vv}
 }
 $$
 
 $$
 \displaylines{
-f''_{yy} = \frac{\p}{\p y} (f'_{y}) = \frac{\p}{\p y} (\phi'_u \cdot x + \phi'_v \cdot 2y) = x (\phi''_{uu} \cdot \frac{\p u}{\p y} + \phi''_{uv} \cdot \frac{\p v}{\p y}) + 2\phi'_{v} + 2y (\phi''_{vu} \cdot \frac{\p u}{\p y} + \phi''_{vv} \cdot \frac{\p v}{\p y}) =  \\
+f''_{yy} = \frac{\p}{\p y} (f'_{y}) = \frac{\p}{\p y} (\phi'_u \cdot x + \phi'_v \cdot 2y) = x \l(\phi''_{uu} \cdot \frac{\p u}{\p y} + \phi''_{uv} \cdot \frac{\p v}{\p y}\r) + 2\phi'_{v} + 2y \l(\phi''_{vu} \cdot \frac{\p u}{\p y} + \phi''_{vv} \cdot \frac{\p v}{\p y}\r) =  \\
 x^2 \phi''_{uu} + 2xy \phi''_{uv} + 2\phi'_{v} + 2xy \phi''_{vu} + 4y^2 \phi''_{vv} = \\
 x^2 \phi''_{uu} + 4xy \phi''_{vu} + 4y^2\phi''_{vv} + 2\phi'_{v}
 }
@@ -232,11 +233,10 @@ $$
 $$
 $$
 \begin{multline*}
-	d^2f = d(d\phi) = d(\phi'_udu + \phi'_vdv) =_{\star\star}\\
-	=_{\star\star} \phi''_{uu}d^2u + 2\phi''_{uv}dudv + \phi''_{vv}d^2v =\ \text{дальше аккуратно подставить подсчитаные дифференциалы}
+	d^2f = d(d\phi) = d(\phi'_udu + \phi'_vdv) = d(\phi'_udu) + d(\phi'_vdv) = d(\phi'_u)du + \phi'_ud^2u + d(\phi'_v)dv + \phi'_vd^2v =\\
+	= (\phi''_{uv}dv + \phi''_{uu}du)du + \phi'_ud^2u + (\phi''_{vu}du + \phi''_{vv}dv)dv + \phi'_vd^2v = \text{дальше на силу рук}
 \end{multline*}
 $$
-$\star\star$ - смешанные производные равны
 
 ### Задача 5
 #### Условие
@@ -300,11 +300,11 @@ $$
 	z = uv^2 \\
 	v = 1 \\
 	u = \frac{\pi}{4}
-\end{cases} \RR P = (\frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}}, \frac{\pi}{4}, 1, \frac{\pi}{4})
+\end{cases} \RR P = \l(\frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}}, \frac{\pi}{4}, 1, \frac{\pi}{4}\r)
 $$
 Тогда:
 $$
-dz \atpoint{P} = (\frac{\pi}{2\sqrt{2}} + \frac{1}{\sqrt{2}})dx + (\frac{\pi}{2\sqrt{2}} - \frac{1}{\sqrt{2}})dy
+dz \atpoint{P} = \l(\frac{\pi}{2\sqrt{2}} + \frac{1}{\sqrt{2}}\r)dx + \l(\frac{\pi}{2\sqrt{2}} - \frac{1}{\sqrt{2}}\r)dy
 $$
 
 Второй дифференциал уже не инвариантен, поэтому найдем его стандартным способом. Для нахождением $z'_y$ воспользуемся равенством $dz = z'_x dx + z'_y dy$ 
@@ -318,14 +318,14 @@ $$
 чтобы не таскать с собой громоздкие выражения, сразу подставим точку:
 $$
 \displaylines{
-\RR \atpoint{P} = v'_x (\frac{\pi}{2\sqrt{2}} - \frac{1}{\sqrt{2}}) + u'_x (\sqrt{2} - \frac{\pi}{2\sqrt{2}} - \frac{1}{\sqrt{2}}) = \\
+\RR \atpoint{P} = v'_x \l(\frac{\pi}{2\sqrt{2}} - \frac{1}{\sqrt{2}}\r) + u'_x \l(\sqrt{2} - \frac{\pi}{2\sqrt{2}} - \frac{1}{\sqrt{2}}\r) = \\
 
-= v'_x (\frac{\pi - 2}{2\sqrt{2}}) + u'_x (\frac{2 - \pi}{2\sqrt{2}}) = 
+= v'_x \l(\frac{\pi - 2}{2\sqrt{2}}\r) + u'_x \l(\frac{2 - \pi}{2\sqrt{2}}\r) = (v'_x - u'_x) \cdot \frac{\pi - 2}{2\sqrt{2}} =
 }
 $$
 тут воспользуемся обратной матрицей Якоби $(*)$ 
 $$
-= \sin u (\frac{\pi - 2}{2\sqrt{2}}) + \frac{\cos u}{v} (\frac{2 - \pi}{2\sqrt{2}}) = \frac{\pi - 2 + 2 - \pi}{4} = 0
+= \l(\sin u - \frac{\cos u}{v}\r) \cdot \frac{\pi - 2}{2\sqrt{2}} = \l(\frac{1}{\sqrt{2}} - \frac{1}{\sqrt{2}}\r) \cdot \frac{\pi - 2}{2\sqrt{2}} = 0
 $$
 
 
@@ -370,6 +370,8 @@ $$
 	\sigma_{2} = -72x - 36
 \end{cases}
 $$
+Поясню про "хитрость с линала", у нас матрица квадратичной формы$Q(dx, dy)$ мы можем посчитать угловые миноры этой матрицы, но тогда переменная $x$ будет в обоих сигмах, что не очень удобно (имхо). Вместо этого, лучше рассмотреть матрицу $Q(dy, dx)$ (задачи очевидно эквивалентные), у которой уже $x$ будет лишь в одной сигме.
+
 подставим обе точки:
 $$
 P_1 = (1, 1) \RR \begin{cases}
@@ -429,7 +431,6 @@ $$
 $P_1$ - точка локального условного минимума
 $P_2$ - точка локального условного максимума
 
-%%PDF break%% <div style="page-break-after: always;"></div>
 ##### Пункт б
 $$
 	\phi(x, y, z) = z^2 - 6z + 5 - xy
@@ -494,7 +495,7 @@ $$
 \end{pmatrix} \RR \begin{cases}
 \sigma_1 = 2 \\
 \sigma_2 = 4 - \lambda^2 = 4 - \frac{25}{4} < 0
-\end{cases} \RR \text{не определенная форма - точка не является экстремумом}
+\end{cases} \RR \text{неопределенная форма - точка не является экстремумом}
 $$
 **Ответ:**
 $P_1$ - локальный условный минимум
