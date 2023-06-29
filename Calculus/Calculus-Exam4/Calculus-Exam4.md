@@ -192,13 +192,13 @@ $$
 \displaylines{
 	\phi''_{xy} = \phi''_{yx} = \frac{\p}{\p x} (f'_{y}) = \frac{\p}{\p x} (\phi'_{u} \cdot x + \phi'_{v} \cdot 2y) = \\
 	= \phi'_{u} + x (\phi''_{uu} \cdot \frac{\p u}{\p x} + \phi''_{vu} \cdot \frac{\p v}{\p x}) + 2y (\phi''_{uv} \cdot \frac{\p u}{\p x} + \phi''_{vv} \cdot \frac{\p v}{\p x}) = \\
-	\phi'_{u} + xy \phi''_{uu} + 3x^3 \phi''_{vu} + 2xy \phi''_{uv} + 6x^2 y \phi''_{vv} = \\ f'_{u} + xy \phi''_{uu} + x \phi''_{vu}(3x^2 + 2y) + 6x^2 y \phi''_{vv}
+	\phi'_{u} + xy \phi''_{uu} + 3x^3 \phi''_{vu} + 2xy \phi''_{uv} + 6x^2 y \phi''_{vv} = \\\phi'_{u} + xy \phi''_{uu} + x \phi''_{vu}(3x^2 + 2y) + 6x^2 y \phi''_{vv}
 }
 $$
 
 $$
 \displaylines{
-f''_{yy} = \frac{\p}{\p y} (\f'_{y}) = \frac{\p}{\p y} (\phi'_u \cdot x + \phi'_v \cdot 2y) = x (\phi''_{uu} \cdot \frac{\p u}{\p y} + \phi''_{uv} \cdot \frac{\p v}{\p y}) + 2\phi'_{v} + 2y (\phi''_{vu} \cdot \frac{\p u}{\p y} + \phi''_{vv} \cdot \frac{\p v}{\p y}) =  \\
+f''_{yy} = \frac{\p}{\p y} (f'_{y}) = \frac{\p}{\p y} (\phi'_u \cdot x + \phi'_v \cdot 2y) = x (\phi''_{uu} \cdot \frac{\p u}{\p y} + \phi''_{uv} \cdot \frac{\p v}{\p y}) + 2\phi'_{v} + 2y (\phi''_{vu} \cdot \frac{\p u}{\p y} + \phi''_{vv} \cdot \frac{\p v}{\p y}) =  \\
 x^2 \phi''_{uu} + 2xy \phi''_{uv} + 2\phi'_{v} + 2xy \phi''_{vu} + 4y^2 \phi''_{vv} = \\
 x^2 \phi''_{uu} + 4xy \phi''_{vu} + 4y^2\phi''_{vv} + 2\phi'_{v}
 }
@@ -399,6 +399,7 @@ $$
 $P_1$ - точка локального условного минимума
 $P_2$ - точка локального условного максимума
 
+%%PDF break%% <div style="page-break-after: always;"></div>
 ##### Пункт б
 $$
 	\phi(x, y, z) = z^2 - 6z + 5 - xy
