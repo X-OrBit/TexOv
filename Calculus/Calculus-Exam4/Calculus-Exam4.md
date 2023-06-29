@@ -166,7 +166,7 @@ $$
 $$
 \displaylines{
 	\frac{\p f}{\p x} = \frac{\p \phi}{\p u} \cdot \frac{\p u}{\p x} + \frac{\p \phi}{\p v} \cdot \frac{\p v}{\p x} = 
-	\phi'_{u} \cdot y + \phi'_{v} \cdot 2x^2 \\[3mm]
+	\phi'_{u} \cdot y + \phi'_{v} \cdot 3x^2 \\[3mm]
 
 \frac{\p f}{\p y} = \frac{\p \phi}{\p u} \cdot \frac{\p u}{\p y} + \frac{\p \phi}{\p v} \cdot \frac{\p v}{\p y} = \phi'_{u} \cdot x + \phi'_{v} \cdot 2y
 }
@@ -174,25 +174,25 @@ $$
 
 Тогда
 $$
-df = \frac{\p f}{\p x} dx + \frac{\p f}{\p y} dy = (\phi'_u \cdot y + \phi'_v \cdot 2x^2)dx + (\phi'_{u} \cdot x + \phi'_v \cdot 2y) dy
+df = \frac{\p f}{\p x} dx + \frac{\p f}{\p y} dy = (\phi'_u \cdot y + \phi'_v \cdot 3x^2)dx + (\phi'_{u} \cdot x + \phi'_v \cdot 2y) dy
 $$
 
 Первый дифференциал нашли, поищем вторые:
 (так как $\phi$ дважды дифференцируема по Шварцу смешанные производные равны)
 $$
 \displaylines{
-f''_{xx} = \frac{\p}{\p x} (f'_{x}) = \frac{\p }{\p x} (\phi'_{u} \cdot y + \phi'_{v} \cdot 2x^2)
+f''_{xx} = \frac{\p}{\p x} (f'_{x}) = \frac{\p }{\p x} (\phi'_{u} \cdot y + \phi'_{v} \cdot 3x^2)
  = y \cdot (\phi''_{u u} \cdot \frac{\p u}{\p x} + \phi''_{uv} \frac{\p v}{\p x}) + \\
-+ 4x \cdot \phi'_{v} + 2x^2 \cdot (\phi''_{vu} \cdot \frac{\p u}{\p x} + \phi''_{vv} \cdot \frac{\p v}{\p x}) = \\
- = xy \phi''_{uu} + 4x \phi'_{v} + 4x^2y \phi''_{uv} + 4x^4 \phi''_{vv}
++ 6x \cdot \phi'_{v} + 3x^2 \cdot (\phi''_{vu} \cdot \frac{\p u}{\p x} + \phi''_{vv} \cdot \frac{\p v}{\p x}) = \\
+ = y^2 \phi''_{uu} + 6x \phi'_{v} + 6x^2y \phi''_{uv} + 9x^4 \phi''_{vv}
 }
 $$
 
 $$
 \displaylines{
-	\phi''_{xy} = \phi''_{yx} = \frac{\p}{\p x} (f'_{y}) = \frac{\p}{\p x} (\phi'_{u} \cdot x + \phi'_{v} \cdot 2y) = \\
+	f''_{xy} = f''_{yx} = \frac{\p}{\p x} (f'_{y}) = \frac{\p}{\p x} (\phi'_{u} \cdot x + \phi'_{v} \cdot 2y) = \\
 	= \phi'_{u} + x (\phi''_{uu} \cdot \frac{\p u}{\p x} + \phi''_{vu} \cdot \frac{\p v}{\p x}) + 2y (\phi''_{uv} \cdot \frac{\p u}{\p x} + \phi''_{vv} \cdot \frac{\p v}{\p x}) = \\
-	\phi'_{u} + xy \phi''_{uu} + 3x^3 \phi''_{vu} + 2xy \phi''_{uv} + 6x^2 y \phi''_{vv} = \\\phi'_{u} + xy \phi''_{uu} + x \phi''_{vu}(3x^2 + 2y) + 6x^2 y \phi''_{vv}
+	\phi'_{u} + xy \phi''_{uu} + 3x^3 \phi''_{vu} + 2y^2 \phi''_{uv} + 6x^2 y \phi''_{vv} = \\\phi'_{u} + xy \phi''_{uu} + \phi''_{vu}(3x^3 + 2y^2) + 6x^2 y \phi''_{vv}
 }
 $$
 
@@ -295,7 +295,7 @@ $$
 $$
 тут воспользуемся обратной матрицей Якоби $(*)$ 
 $$
-= \sin u (\frac{\pi - 2}{2\sqrt{2}}) + \cos u (\frac{2 - \pi}{2\sqrt{2}}) = \frac{\pi - 2 + 2 - \pi}{4} = 0
+= \sin u (\frac{\pi - 2}{2\sqrt{2}}) + \frac{\cos u}{v} (\frac{2 - \pi}{2\sqrt{2}}) = \frac{\pi - 2 + 2 - \pi}{4} = 0
 $$
 
 
