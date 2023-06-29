@@ -192,7 +192,7 @@ $$
 \displaylines{
 	f''_{xy} = f''_{yx} = \frac{\p}{\p x} (f'_{y}) = \frac{\p}{\p x} (\phi'_{u} \cdot x + \phi'_{v} \cdot 2y) = \\
 	= \phi'_{u} + x (\phi''_{uu} \cdot \frac{\p u}{\p x} + \phi''_{vu} \cdot \frac{\p v}{\p x}) + 2y (\phi''_{uv} \cdot \frac{\p u}{\p x} + \phi''_{vv} \cdot \frac{\p v}{\p x}) = \\
-	\phi'_{u} + xy \phi''_{uu} + 3x^3 \phi''_{vu} + 2xy \phi''_{uv} + 6x^2 y \phi''_{vv} = \\\phi'_{u} + xy \phi''_{uu} + x \phi''_{vu}(3x^2 + 2y) + 6x^2 y \phi''_{vv}
+	\phi'_{u} + xy \phi''_{uu} + 3x^3 \phi''_{vu} + 2y^2 \phi''_{uv} + 6x^2 y \phi''_{vv} = \\\phi'_{u} + xy \phi''_{uu} + \phi''_{vu}(3x^3 + 2y^2) + 6x^2 y \phi''_{vv}
 }
 $$
 
@@ -295,7 +295,7 @@ $$
 $$
 тут воспользуемся обратной матрицей Якоби $(*)$ 
 $$
-= \sin u (\frac{\pi - 2}{2\sqrt{2}}) + \cos u (\frac{2 - \pi}{2\sqrt{2}}) = \frac{\pi - 2 + 2 - \pi}{4} = 0
+= \sin u (\frac{\pi - 2}{2\sqrt{2}}) + \frac{\cos u}{v} (\frac{2 - \pi}{2\sqrt{2}}) = \frac{\pi - 2 + 2 - \pi}{4} = 0
 $$
 
 
