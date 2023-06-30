@@ -192,8 +192,8 @@ $$
 $$
 \displaylines{
 	f''_{xy} = f''_{yx} = \frac{\p}{\p x} (f'_{y}) = \frac{\p}{\p x} (\phi'_{u} \cdot x + \phi'_{v} \cdot 2y) = \\
-	= \phi'_{u} + x \l(\phi''_{uu} \cdot \frac{\p u}{\p x} + \phi''_{vu} \cdot \frac{\p v}{\p x}\r) + 2y \l(\phi''_{uv} \cdot \frac{\p u}{\p x} + \phi''_{vv} \cdot \frac{\p v}{\p x}\r) = \\
-	\phi'_{u} + xy \phi''_{uu} + 3x^3 \phi''_{vu} + 2y^2 \phi''_{uv} + 6x^2 y \phi''_{vv} = \\\phi'_{u} + xy \phi''_{uu} + \phi''_{vu}(3x^3 + 2y^2) + 6x^2 y \phi''_{vv}
+	= \phi'_{u} + x \l(\phi''_{uu} \cdot \frac{\p u}{\p x} + \phi''_{uv} \cdot \frac{\p v}{\p x}\r) + 2y \l(\phi''_{vu} \cdot \frac{\p u}{\p x} + \phi''_{vv} \cdot \frac{\p v}{\p x}\r) = \\
+	\phi'_{u} + xy \phi''_{uu} + 3x^3 \phi''_{uv} + 2y^2 \phi''_{vu} + 6x^2 y \phi''_{vv} = \\\phi'_{u} + xy \phi''_{uu} + \phi''_{vu}(3x^3 + 2y^2) + 6x^2 y \phi''_{vv}
 }
 $$
 
