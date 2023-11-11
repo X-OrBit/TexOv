@@ -259,17 +259,18 @@ $$
 
 ### Функциональные ряды
 #### Поточечная сходимость
-Пусть $D \subset \R, \quad f_n, S : D \to \R, \quad n, 1, 2, \dotsc$. Тогда, функциональный ряд $\Sum{n=1}{\infty} f_n(x)$ сходится поточечно к $S(x)$ на множестве $D$, если $S_n \overset{D}{\to} S, N \to \infty$, где $S_n(x) = \Sum{n=1}{N} f_n(x)$
+Пусть $D \subset \R, \quad f_n, S : D \to \R, \quad n = 1, 2, \dotsc$. Тогда, функциональный ряд $\Sum{n=1}{\infty} f_n(x)$ сходится поточечно к $S(x)$ на множестве $D$, если $S_n \overset{D}{\to} S, n \to \infty$, где $S_n(x) = \Sum{k=1}{n} f_n(x)$
 
+%%PDF break%% <div style="page-break-after: always;"></div>
 #### Равномерная сходимость
-Пусть $D \subset \R, \quad f_n, S : D \to \R, \quad n, 1, 2, \dotsc$. Тогда, функциональный ряд $\Sum{n=1}{\infty} f_n(x)$ сходится равномерно к $S(x)$ на множестве $D$, если $S_n \overset{D}{\toto} S, N \to \infty$, где $S_n(x) = \Sum{n=1}{N} f_n(x)$
+Пусть $D \subset \R, \quad f_n, S : D \to \R, \quad n = 1, 2, \dotsc$. Тогда, функциональный ряд $\Sum{n=1}{\infty} f_n(x)$ сходится равномерно к $S(x)$ на множестве $D$, если $S_n \overset{D}{\toto} S, n \to \infty$, где $S_n(x) = \Sum{n=1}{N} f_n(x)$
 
 ### Критерии равномерной сходимости функциональных рядов
 #### Критерий Коши
 $$
 \displaylines{
 	f_n : D \to \R,\quad S_n = \Sum{k=1}{n} f_k(x) \RR\\
-	\RR \Sum{k=1}{n} f_n(x) \text{ сходится } \LR \forall \eps > 0 \quad \exists N \quad \forall m > n > N, \quad \forall x \in D \quad \l| \Sum{k=n+1}{m} f_k(x) \r| < \eps
+	\RR \Sum{n=1}{\infty} f_n(x) \overset{D}{\toto} ~~ \LR \forall \eps > 0 \quad \exists N \quad \forall m > n > N, \quad \forall x \in D \quad \l| \Sum{k=n+1}{m} f_k(x) \r| < \eps
 }
 $$
 
@@ -285,7 +286,7 @@ $$
 $$
 \l. \begin{matrix}
 	a_n, b_n : D \to \R \\
-	\exists M > 0 : \forall n \in \N, \forall x \in D \quad \l|\Sum{k=1}{N} a_n\r| \le M \\
+	\exists M > 0 : \forall n \in \N, \forall x \in D \quad \l|\Sum{k=1}{n} a_k\r| \le M \\
 	\set{b_n(x)} \text{ монотонна по } n ~(\text{т.е } \forall x \in D \quad b_n(x) \ge_{/\le} b_{n+1}(x)) \\
 	b_n \overset{D}{\toto} 0
 \end{matrix} \r\} \RR \Sum{n=1}{\infty} a_n(x)b_n(x) \overset{D}{\toto}
@@ -297,7 +298,7 @@ $$
 	\Sum{n=1}{\infty} a_n(x) \overset{D}{\toto} \\
 	\set{b_n(x)} \text{ монотонна по } n \\
 	\exists M > 0 : \forall n \in \N, \forall x \in D \quad |b_n(x)| \le M \\
-\end{matrix} \r\} \RR \Sum{n=1}{\infty} a_n(x)b_n(x) \text{ сх. равномерно на } D
+\end{matrix} \r\} \RR \Sum{n=1}{\infty} a_n(x)b_n(x) \overset{D}{\toto}
 $$
 
 ### Полезные штучки
@@ -327,6 +328,7 @@ $$
 3. При $\alpha = 1$, $\beta < 2$ ряд расходится
 4. При $\alpha < 1$ ряд расходится
 
+%%PDF break%% <div style="page-break-after: always;"></div>
 #### Ряды Тейлора (снова...)
 $$
 \displaylines{
@@ -338,7 +340,6 @@ $$
 }
 $$
 
-%%PDF break%% <div style="page-break-after: always;"></div>
 #### Табличные производные
 $$\begin{array}{|c|c|c|c|}
 \hline
