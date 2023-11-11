@@ -265,6 +265,9 @@ $$
 #### Равномерная сходимость
 Пусть $D \subset \R, \quad f_n, S : D \to \R, \quad n = 1, 2, \dotsc$. Тогда, функциональный ряд $\Sum{n=1}{\infty} f_n(x)$ сходится равномерно к $S(x)$ на множестве $D$, если $S_n \overset{D}{\toto} S, n \to \infty$, где $S_n(x) = \Sum{n=1}{N} f_n(x)$
 
+### Необходимое условие равномерной сходимости функционального ряда
+$\Sum{n=1}{\infty} f_n(x) \overset{D}{\toto}$, тогда $f_n(x) \overset{D}{\toto} 0, n \to \infty$. Иначе говоря, если $f_n(x) \overset{D}{\not\toto} 0$, то $\Sum{n=1}{\infty} f_n(x) \overset{D}{\not\toto}$
+
 ### Критерии равномерной сходимости функциональных рядов
 #### Критерий Коши
 $$
@@ -306,7 +309,7 @@ $$
 Ограничим сумму синусов (для косинусов аналогично)
 
 Есть два варианта: один для русов, другой для ящеров:
-1. $\Sum{k=1}{n} \sin \alpha k = \Im \Sum{k=0}{n} (e^{\alpha i})^k \le \l|\Sum{k=1}{n} (e^{\alpha i})^k\r| =$ \[геом прогрессия\] $= \l|\frac{e^{\alpha i}(1 - e^{\alpha n i})}{1 - e^{\alpha i}}\r| \le \frac{2}{1 - e^{\alpha i}}$
+1. $\Sum{k=1}{n} \sin \alpha k = \Im \Sum{k=1}{n} (e^{\alpha i})^k \le \l|\Sum{k=1}{n} (e^{\alpha i})^k\r| =$ \[геом прогрессия\] $= \l|\frac{e^{\alpha i}(1 - e^{\alpha n i})}{1 - e^{\alpha i}}\r| \le \frac{2}{1 - e^{\alpha i}}$
 2. Воспользуемся тем, что $2\cos\frac{\alpha}{2} \cdot \sin\alpha k = \sin\l( \alpha k + \frac{\alpha}{2} \r) - \sin\l( \alpha k - \frac{\alpha}{2} \r)$. Тогда домножим $\Sum{k=1}{n} \sin \alpha k$ на $2\cos\frac{\alpha}{2}$ и получим: $\sin\l( \alpha n + \frac{\alpha}{2} \r) - \sin\frac{\alpha}{2}$
 	$\Sum{k=1}{n} \sin \alpha k = \frac{\sin\l( \alpha n + \frac{\alpha}{2} \r) - \sin\frac{\alpha}{2}}{2\cos \frac{\alpha}{2}} \le \l|\frac{\sin\l( \alpha n + \frac{\alpha}{2} \r) - \sin\frac{\alpha}{2}}{\cos \frac{\alpha}{2}}\r|$, дальше, наверное, как-то и можно сократить, но зачем, если есть первый способ
 	 
