@@ -303,15 +303,17 @@ $$
 	\exists M > 0 : \forall n \in \N, \forall x \in D \quad |b_n(x)| \le M \\
 \end{matrix} \r\} \RR \Sum{n=1}{\infty} a_n(x)b_n(x) \overset{D}{\toto}
 $$
+#### Граничная точка
+Если в граничной точке, функциональный ряд не сходится, значит функциональный ряд равномерно не сходится
 
 ### Полезные штучки
 #### Как ограничивать сумму (ко-)синусов
 Ограничим сумму синусов (для косинусов аналогично)
 
 Есть два варианта: один для русов, другой для ящеров:
-1. $\Sum{k=1}{n} \sin \alpha k = \Im \Sum{k=1}{n} (e^{\alpha i})^k \le \l|\Sum{k=1}{n} (e^{\alpha i})^k\r| =$ \[геом прогрессия\] $= \l|\frac{e^{\alpha i}(1 - e^{\alpha n i})}{1 - e^{\alpha i}}\r| \le \frac{2}{1 - e^{\alpha i}}$
+1. $\l| \Sum{k=1}{n} \sin \alpha k \r| = \l| \Im \Sum{k=1}{n} (e^{\alpha i})^k \r| \le \l|\Sum{k=1}{n} (e^{\alpha i})^k\r| =$ \[геом прогрессия\] $= \l|\frac{e^{\alpha i}(1 - e^{\alpha n i})}{1 - e^{\alpha i}}\r| \le \frac{2}{1 - e^{\alpha i}}$
 2. Воспользуемся тем, что $2\cos\frac{\alpha}{2} \cdot \sin\alpha k = \sin\l( \alpha k + \frac{\alpha}{2} \r) - \sin\l( \alpha k - \frac{\alpha}{2} \r)$. Тогда домножим $\Sum{k=1}{n} \sin \alpha k$ на $2\cos\frac{\alpha}{2}$ и получим: $\sin\l( \alpha n + \frac{\alpha}{2} \r) - \sin\frac{\alpha}{2}$
-	$\Sum{k=1}{n} \sin \alpha k = \frac{\sin\l( \alpha n + \frac{\alpha}{2} \r) - \sin\frac{\alpha}{2}}{2\cos \frac{\alpha}{2}} \le \l|\frac{2}{2\cos \frac{\alpha}{2}}\r| = \frac{1}{\l|\cos \frac{\alpha}{2}\r|}$
+	$\l| \Sum{k=1}{n} \sin \alpha k \r| = \l| \frac{\sin\l( \alpha n + \frac{\alpha}{2} \r) - \sin\frac{\alpha}{2}}{2\cos \frac{\alpha}{2}} \r| \le \l|\frac{2}{2\cos \frac{\alpha}{2}}\r| = \frac{1}{\l|\cos \frac{\alpha}{2}\r|}$
 	 
 #### Формула Эйлера
 $$
