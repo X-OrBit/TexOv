@@ -1,1 +1,1 @@
-Нашёл ошибку? Лучше всего написать об этом на [гитхабе](https://github.com/X-OrBit/TexOv/issues)
+Уведомлять об опечатках, багах в решениях в лс или на [гитхабе](https://github.com/X-OrBit/TexOv/issues)

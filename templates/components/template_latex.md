@@ -50,4 +50,14 @@ $$
 \newcommand{\rev}{\underset{\Longrightarrow}{\text{УСВ}}}
 \let\ds\displaystyle
 \newcommand{\atpoint}[1]{\Big |_{#1}}
+\newcommand{\Sum}[2]{\overset{#2}{\underset{#1}{\sum}}}
+\newcommand{\Prod}[2]{\overset{#2}{\underset{#1}{\prod}}}
+\newcommand{\UpLim}[2]{\underset{#1 \to #2}{\overline{\lim}}}
+\newcommand{\LowLim}[2]{\underset{#1 \to #2}{\underline{\lim}}}
+\newcommand{\toto}{\rightrightarrows}
+\newcommand{\ceil}[1]{\left\lceil#1\right\rceil}
+\newcommand{\floor}[1]{\left\lfloor#1\right\rfloor}
+\newcommand{\Inf}[1]{\underset{#1}{\inf}~}
+\newcommand{\Sup}[1]{\underset{#1}{\sup}~}
+\newcommand{\Prod}[2]{\overset{#2}{\underset{#1}{\prod}}}
 $$
