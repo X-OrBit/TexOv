@@ -21,6 +21,7 @@ $$
 \newcommand{\ffint}[3]{\l.#1\r|_{#2}^{#3}}
 \newcommand{\bint}{\displaystyle{\int}}
 \newcommand{\inti}[2]{\displaystyle{\int\limits_{#1}^{#2}}}
+\newcommand{\intg}{\displaystyle{\int}}
 \newcommand{\Lim}[2]{\lim\limits_{#1 \to #2}}
 \newcommand{\p}{\partial}
 \newcommand{\dlim}[4]{\Lim{#1}{#2}\Lim{#3}{#4}}
@@ -33,6 +34,7 @@ $$
 \newcommand{\F}{\mathbb{F}}
 \renewcommand{\C}{\mathbb{C}}
 \newcommand{\E}{\mathbb{E}}
+\newcommand{\D}{\mathbb{D}}
 \newcommand{\N} {\mathbb{N}}
 \newcommand{\Z} {\mathbb{Z}}
 \newcommand{\R} {\mathbb{R}}
@@ -60,4 +62,17 @@ $$
 \newcommand{\Inf}[1]{\underset{#1}{\inf}~}
 \newcommand{\Sup}[1]{\underset{#1}{\sup}~}
 \newcommand{\Prod}[2]{\overset{#2}{\underset{#1}{\prod}}}
+\newcommand{\cov}[2]{\text{cov}(#1, #2)}
+\newcommand{\B}{\mathcal{B}}
+\newcommand{\almostsurely}{\overset{\text{п.н.}}{\to}}
+\newcommand{\toP}{\overset{p}{\to}}
+\newcommand{\toD}{\overset{d}{\to}}
+\renewcommand{\L}{\mathcal{L}}
+\newcommand{\atan}{\arctan}
+\newcommand{\doubleint}[1]{\underset{\!\!\!\!\!#1}{\intg\!\!\!\intg}}
+\newcommand{\tripleint}[1]{\underset{\!\!\!\!\!#1}{\intg\!\!\!\intg\!\!\!\intg}}
+\newcommand{\multint}[1]{\underset{\!\!\!\!\!#1}{\intg\!\!\!\intg\!\!\dotsc\!\intg}}
+\newcommand{\sstar}{{\star\star}}
+\newcommand{\ssstar}{{\star\star\star}}
+\newcommand{\scalar}[1]{\l\langle{#1}\r\rangle}
 $$
