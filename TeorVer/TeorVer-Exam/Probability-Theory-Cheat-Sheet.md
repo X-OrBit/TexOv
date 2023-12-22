@@ -34,6 +34,7 @@ $$
 	|\E \xi \eta| \le \sqrt{\E \xi^2 \E \eta^2}, \qquad |\E \xi \eta| = \sqrt{\E \xi^2 \E \eta^2} \LR \xi \text{ и } \eta \text{ лин. завис. п.н. между собой}
 }
 $$
+%%PDF break%% <div style="page-break-after: always;"></div>
 ### Дисперсия&Ковариация
 Определение:
 $$
@@ -80,6 +81,7 @@ $$
 - $\LR F_\xi(x_1, \dotsc, x_n) = F_{\xi_1}(x_1) \cdot \dotsc \cdot F_{\xi_n}(x_n) \LR$
 - $\LR p_\xi(x_1, \dotsc, x_n) = p_{\xi_1}(x_1) \cdot \dotsc \cdot p_{\xi_n}(x_n)$
 - Если $\cov{\xi}{\eta} = 0$, то $\xi$ и $\eta$ некоррелируемые
+%%PDF break%% <div style="page-break-after: always;"></div>
 ### Свойства
 $$
 \displaylines{
@@ -124,6 +126,7 @@ $$
 	\phi_\xi(t) = e^{\lambda(e^{it} - 1)}
 }
 $$
+%%PDF break%% <div style="page-break-after: always;"></div>
 ### Непрерывное равномерное распределение
 $$
 \displaylines{
@@ -180,6 +183,7 @@ $$
 
 
 
+%%PDF break%% <div style="page-break-after: always;"></div>
 ## Случайный вектор
 ### Определение
 $$
@@ -292,7 +296,7 @@ $$
 	\phi_{A\xi + b}(t) = e^{i\scalar{t, b}}\phi_\xi(A^Tt)
 }
 $$
- ,
+
 ### Ортогонализация Грамма-Шмидта
 Пусть нам дан вектор $\xi = (\xi_1, \dotsc, \xi_n) \sim N(0, R)$. Хотим найти такие $A \in Mat_{n\times n}(\R)$ и $\eta = (\eta_1, \dotsc, \eta_n)$, что $\eta_i \sim N(0, 1)$ и $\xi = A\eta$
 Для этого сначала находим ортогональный базис (1). Далее нормируем его (2) 
@@ -325,6 +329,7 @@ $$
 $$
 	\xi_n \toD \xi \LR \forall x \quad F_{\xi_n}(x) \to F_\xi(x), n \to \infty
 $$
+%%PDF break%% <div style="page-break-after: always;"></div>
 ### Следствия сходимостей
 1. $\xi_n \almostsurely \xi \RR \xi_n \toP \xi$ (в случае дискретных величин: $\xi_n \almostsurely \xi \LR \xi_n \toP \xi$)
 2. $\xi_n \overset{Lp}{\to} \xi \RR \xi_n \toP \xi$
@@ -461,6 +466,7 @@ $$
 	\inti{a}{b} udv = \fint{uv}{a}{b} - \inti{a}{b} v du
 }
 $$
+%%PDF break%% <div style="page-break-after: always;"></div>
 ### Для сверки
 $$
 \begin{array}{|c|c|}
