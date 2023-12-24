@@ -55,7 +55,7 @@ $$
 	
 	-\frac{8\sqrt{2}}{5} \ffint{\l[ \cos\phi - \frac{\cos^3\phi}{3} \r]}{0}{\pi/2} = \frac{8\sqrt{2}}{5} \cdot \l( 1 - \frac{1}{3} \r) = \frac{16\sqrt{2}}{15} \\
 	
-	\star - \cos\alpha = \frac{r}{2} \RR r = 2\cos\alpha = 2\cos(90^\circ - \alpha) = 2\sin\phi
+	\star - \cos\alpha = \frac{r}{2} \RR r = 2\cos\alpha = 2\cos(90^\circ - \phi) = 2\sin\phi
 }
 $$
 %%PDF break%% <div style="page-break-after: always;"></div>
