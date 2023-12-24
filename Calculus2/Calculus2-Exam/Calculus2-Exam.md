@@ -248,8 +248,8 @@ $$
 	\Sum{n=0}{\infty} r^nx^{kn} = 1 + rx^k + r^2x^{2k} + \dotsc = I\\
 	\RR 1 = 1 + rx^k + r^2x^{2k} + \dotsc - rx^k \cdot(1 + rx^k + r^2x^{2k} + \dotsc) = I - rx^k \cdot I \RR I = \frac{1}{1 - rx^k} \\
 	\RR \begin{cases}
-		\Sum{n=0}{\infty} x^n \frac{1}{1 - x} \\
-		\Sum{n=0}{\infty} (-1)^nx^n \frac{1}{1 + x} \\
+		\Sum{n=0}{\infty} x^n = \frac{1}{1 - x} \\
+		\Sum{n=0}{\infty} (-1)^nx^n = \frac{1}{1 + x} \\
 		\Sum{n=0}{\infty} x^{nk} = \frac{1}{1 - x^k} \\
 		\Sum{n=0}{\infty} 2^nx^n = \frac{1}{1 - 2x}
 	\end{cases} \\
