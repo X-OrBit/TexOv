@@ -98,7 +98,7 @@ $$
 
 #### Решение
 
-![[task3.png]]
+![[Calculus/Calculus-Exam4/images/list13+/task3.png]]
 ##### Пункт а
 
 приведем к нужному виду:
